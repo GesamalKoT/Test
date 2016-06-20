@@ -1,0 +1,78 @@
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\bin\Debug\MGTU STANKIN.exe.config
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\bin\Debug\MGTU STANKIN.exe
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\bin\Debug\MGTU STANKIN.pdb
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\obj\Debug\MainWindow.baml
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\obj\Debug\MainWindow.g.cs
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\obj\Debug\App.g.cs
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\obj\Debug\MGTU STANKIN_MarkupCompile.cache
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\obj\Debug\MGTU STANKIN.g.resources
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\obj\Debug\MGTU_STANKIN.Properties.Resources.resources
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\obj\Debug\MGTU STANKIN.csproj.GenerateResource.Cache
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\obj\Debug\MGTU STANKIN.exe
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\obj\Debug\MGTU STANKIN.pdb
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\obj\Debug\MGTU STANKIN.csprojResolveAssemblyReference.cache
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\bin\Debug\MySql_Class.pdb
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\obj\Debug\add_NewRoom.baml
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\obj\Debug\add_NewRoom.g.cs
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\obj\Debug\add_NewUser.baml
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\obj\Debug\add_NewUser.g.cs
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\obj\Debug\MainForm.baml
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\obj\Debug\MainForm.g.cs
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\obj\Debug\Functions.baml
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\obj\Debug\Functions.g.cs
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\obj\Debug\admin_Functions.baml
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\obj\Debug\admin_Functions.g.cs
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\obj\Debug\room_Selection.baml
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\obj\Debug\room_Selection.g.cs
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\obj\Debug\add_Student.baml
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\obj\Debug\add_Student.g.cs
+C:\Users\Василий\Desktop\Станкин\Диплом\Test_Application\MGTU STANKIN\MGTU STANKIN\bin\Debug\MGTU STANKIN.exe.config
+C:\Users\Василий\Desktop\Станкин\Диплом\Test_Application\MGTU STANKIN\MGTU STANKIN\obj\Debug\MGTU STANKIN.exe
+C:\Users\Василий\Desktop\Станкин\Диплом\Test_Application\MGTU STANKIN\MGTU STANKIN\obj\Debug\MGTU STANKIN.pdb
+C:\Users\Василий\Desktop\Станкин\Диплом\Test_Application\MGTU STANKIN\MGTU STANKIN\bin\Debug\MGTU STANKIN.exe
+C:\Users\Василий\Desktop\Станкин\Диплом\Test_Application\MGTU STANKIN\MGTU STANKIN\bin\Debug\MGTU STANKIN.pdb
+C:\Users\Василий\Desktop\Станкин\Диплом\Test_Application\MGTU STANKIN\MGTU STANKIN\bin\Debug\MySql_Class.dll
+C:\Users\Василий\Desktop\Станкин\Диплом\Test_Application\MGTU STANKIN\MGTU STANKIN\bin\Debug\MySql_Class.pdb
+C:\Users\Василий\Desktop\Станкин\Диплом\Test_Application\MGTU STANKIN\MGTU STANKIN\obj\Debug\MGTU STANKIN.csprojResolveAssemblyReference.cache
+C:\Users\Василий\Desktop\Станкин\Диплом\Test_Application\MGTU STANKIN\MGTU STANKIN\obj\Debug\add_NewRoom.baml
+C:\Users\Василий\Desktop\Станкин\Диплом\Test_Application\MGTU STANKIN\MGTU STANKIN\obj\Debug\add_NewUser.baml
+C:\Users\Василий\Desktop\Станкин\Диплом\Test_Application\MGTU STANKIN\MGTU STANKIN\obj\Debug\add_Student.baml
+C:\Users\Василий\Desktop\Станкин\Диплом\Test_Application\MGTU STANKIN\MGTU STANKIN\obj\Debug\admin_Functions.baml
+C:\Users\Василий\Desktop\Станкин\Диплом\Test_Application\MGTU STANKIN\MGTU STANKIN\obj\Debug\Functions.baml
+C:\Users\Василий\Desktop\Станкин\Диплом\Test_Application\MGTU STANKIN\MGTU STANKIN\obj\Debug\MainForm.baml
+C:\Users\Василий\Desktop\Станкин\Диплом\Test_Application\MGTU STANKIN\MGTU STANKIN\obj\Debug\MainWindow.baml
+C:\Users\Василий\Desktop\Станкин\Диплом\Test_Application\MGTU STANKIN\MGTU STANKIN\obj\Debug\room_Selection.baml
+C:\Users\Василий\Desktop\Станкин\Диплом\Test_Application\MGTU STANKIN\MGTU STANKIN\obj\Debug\add_NewRoom.g.cs
+C:\Users\Василий\Desktop\Станкин\Диплом\Test_Application\MGTU STANKIN\MGTU STANKIN\obj\Debug\add_NewUser.g.cs
+C:\Users\Василий\Desktop\Станкин\Диплом\Test_Application\MGTU STANKIN\MGTU STANKIN\obj\Debug\add_Student.g.cs
+C:\Users\Василий\Desktop\Станкин\Диплом\Test_Application\MGTU STANKIN\MGTU STANKIN\obj\Debug\admin_Functions.g.cs
+C:\Users\Василий\Desktop\Станкин\Диплом\Test_Application\MGTU STANKIN\MGTU STANKIN\obj\Debug\Functions.g.cs
+C:\Users\Василий\Desktop\Станкин\Диплом\Test_Application\MGTU STANKIN\MGTU STANKIN\obj\Debug\MainForm.g.cs
+C:\Users\Василий\Desktop\Станкин\Диплом\Test_Application\MGTU STANKIN\MGTU STANKIN\obj\Debug\MainWindow.g.cs
+C:\Users\Василий\Desktop\Станкин\Диплом\Test_Application\MGTU STANKIN\MGTU STANKIN\obj\Debug\room_Selection.g.cs
+C:\Users\Василий\Desktop\Станкин\Диплом\Test_Application\MGTU STANKIN\MGTU STANKIN\obj\Debug\App.g.cs
+C:\Users\Василий\Desktop\Станкин\Диплом\Test_Application\MGTU STANKIN\MGTU STANKIN\obj\Debug\MGTU STANKIN_MarkupCompile.cache
+C:\Users\Василий\Desktop\Станкин\Диплом\Test_Application\MGTU STANKIN\MGTU STANKIN\obj\Debug\MGTU STANKIN.g.resources
+C:\Users\Василий\Desktop\Станкин\Диплом\Test_Application\MGTU STANKIN\MGTU STANKIN\obj\Debug\MGTU_STANKIN.Properties.Resources.resources
+C:\Users\Василий\Desktop\Станкин\Диплом\Test_Application\MGTU STANKIN\MGTU STANKIN\obj\Debug\MGTU STANKIN.csproj.GenerateResource.Cache
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\bin\Debug\MySql_Class.dll
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\obj\Debug\Citizenship.baml
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\obj\Debug\Citizenship.g.cs
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\obj\Debug\studentSerch.baml
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\obj\Debug\studentSerch.g.cs
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\obj\Debug\studentInfo.baml
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\obj\Debug\studentInfo.g.cs
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\obj\Debug\eviction.baml
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\obj\Debug\eviction.g.cs
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\obj\Debug\livingInfoPage.baml
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\obj\Debug\livingInfoPage.g.cs
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\obj\Debug\roomInfoPage.baml
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\obj\Debug\roomInfoPage.g.cs
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\obj\Debug\arcInfo.baml
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\obj\Debug\arcInfo.g.cs
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\obj\Debug\settingsPage.baml
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\obj\Debug\settingsPage.g.cs
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\obj\Debug\EvictTillWindow.baml
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\obj\Debug\EvictTillWindow.g.cs
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\obj\Debug\reportsPage.baml
+C:\Users\Василий\Desktop\Станкин\Диплом\MGTU STANKIN\MGTU STANKIN\obj\Debug\reportsPage.g.cs

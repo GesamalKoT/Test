@@ -1,0 +1,71 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="MGTU_STANKIN.settingsPage" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Height="450" Width="710"
+      Loaded="Page_Loaded"
+	Title="settingsPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="36*"/>
+            <ColumnDefinition Width="166*"/>
+            <ColumnDefinition Width="157*"/>
+            <ColumnDefinition Width="313*"/>
+            <ColumnDefinition Width="38*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="26*"/>
+            <RowDefinition Height="34*"/>
+            <RowDefinition Height="13*"/>
+            <RowDefinition Height="56*"/>
+            <RowDefinition Height="13*"/>
+            <RowDefinition Height="56*"/>
+            <RowDefinition Height="13*"/>
+            <RowDefinition Height="34*"/>
+            <RowDefinition Height="13*"/>
+            <RowDefinition Height="34*"/>
+            <RowDefinition Height="107*"/>
+            <RowDefinition Height="51*"/>
+        </Grid.RowDefinitions>
+        <Label Content="ФИО зав.общежития:" Grid.Column="1" HorizontalAlignment="Left" Margin="0,5,0,0" Grid.Row="1" VerticalAlignment="Top" Width="151" Height="26"/>
+        <Label Grid.Column="1" HorizontalAlignment="Left" Margin="0,5,0,0" Grid.Row="10" VerticalAlignment="Top" Width="147" Height="80">
+            <TextBlock TextWrapping="Wrap" Width="125"><Run Text="Срок хранения информации о выселеных проживающих"/></TextBlock>
+        </Label>
+        <Label Grid.Column="1" HorizontalAlignment="Left" Grid.Row="3" VerticalAlignment="Top" Margin="0,5,0,0" Width="156" Height="45">
+            <TextBlock TextWrapping="Wrap" Width="147"><Run Text="Дата оплаты проживания (осенний семестр)"/></TextBlock>
+        </Label>
+        <Label Grid.Column="1" HorizontalAlignment="Left" Grid.Row="5" VerticalAlignment="Top" Margin="0,5,0,0" Width="156" Height="45">
+            <TextBlock TextWrapping="Wrap" Width="147"><Run Text="Дата оплаты проживания (весенний семестр)"/></TextBlock>
+        </Label>
+        <Label Grid.Column="1" HorizontalAlignment="Left" Margin="0,5,0,0" Grid.Row="7" VerticalAlignment="Top" Width="166" Height="26">
+            <TextBlock TextWrapping="Wrap"><Run Text="Периодичность проверки"/></TextBlock>
+        </Label>
+        <Label Content="Корпус общежития" Grid.Column="1" HorizontalAlignment="Left" Margin="0,5,0,0" Grid.Row="9" VerticalAlignment="Top" Width="158" Height="26"/>
+        <TextBox x:Name="fioString" Grid.Column="2" Height="23" Margin="10,5,10,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBox x:Name="housingNumber" Grid.Column="2" Height="23" Margin="10,5,10,0" Grid.Row="9" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <ComboBox x:Name="outTime" Grid.Column="2" Margin="10,31,10,0" Grid.Row="10" VerticalAlignment="Top" Height="24">
+            <System:String>1 месяц</System:String>
+            <System:String>6 месяцев</System:String>
+            <System:String>1 год</System:String>
+            <System:String>Не удалять информацию</System:String>
+        </ComboBox>
+        <ComboBox x:Name="checkPeriod" Grid.Column="2" Margin="10,5,10,0" Grid.Row="7" VerticalAlignment="Top" Height="24">
+            <System:String>При каждом запуске</System:String>
+            <System:String>Раз в неделю</System:String>
+            <System:String>Раз в месяц</System:String>
+            <System:String>Не проверять</System:String>
+        </ComboBox>
+        <DatePicker x:Name="autumnDate" SelectedDateChanged="autumnDate_SelectedDateChanged" SelectedDateFormat="Long" Grid.Column="2" Margin="114,11,10,0" Grid.Row="3" VerticalAlignment="Top" Height="24"/>
+        <DatePicker x:Name="springDate" SelectedDateFormat="Long" SelectedDateChanged="springDate_SelectedDateChanged" Grid.Column="2" Margin="114,11,10,0" Grid.Row="5" VerticalAlignment="Top" Height="24"/>
+        <Button Content="Назад" x:Name="backButton" Command="NavigationCommands.BrowseBack" Grid.Column="3" HorizontalAlignment="Left" Margin="135,68,0,0" Grid.Row="10" VerticalAlignment="Top" Width="109" Height="32"/>
+        <Button Content="Сохранить" x:Name="saveChangesButton" Click="saveChangesButton_Click" Grid.Column="3" HorizontalAlignment="Left" Margin="10,69,0,0" Grid.Row="10" Width="109" Height="32" VerticalAlignment="Top"/>
+        <TextBox x:Name="autumnDateString" Grid.Column="2" HorizontalAlignment="Left" Height="24" Margin="10,11,0,0" Grid.Row="3" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="99"/>
+        <TextBox x:Name="springDateString" Grid.Column="2" HorizontalAlignment="Left" Height="24" Margin="10,11,0,0" Grid.Row="5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="99"/>
+
+    </Grid>
+</Page>

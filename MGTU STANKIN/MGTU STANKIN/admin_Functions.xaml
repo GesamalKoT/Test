@@ -1,0 +1,19 @@
+﻿<Page x:Class="MGTU_STANKIN.admin_Functions"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+	Title="admin_Functions" Width="579" Height="322">
+
+    <Grid>
+
+        <Button Margin="41,57,392,222" Content="Добавить нового пользователя" x:Name="add_NewUser" Click="add_NewUser_Click"/>
+        <Button Margin="41,125,392,154" Content="Удалить пользователя" x:Name="delete_User" Click="delete_User_Click"/>
+        <Button Margin="41,201,392,78" Content="Добавить комнату" x:Name="add_Room" Click="add_Room_Click"/>
+        <Button Margin="340,201,125,88" Content="Назад" x:Name="back" Command="NavigationCommands.BrowseBack"/>
+
+
+    </Grid>
+</Page>

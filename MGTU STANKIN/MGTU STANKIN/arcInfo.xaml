@@ -1,0 +1,24 @@
+﻿<Window x:Class="MGTU_STANKIN.arcInfo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Информация" Height="315.667" Width="470" Loaded="Window_Loaded">
+    <Grid>
+
+        <Label Content="Фамилия" Margin="26,23,264,0" VerticalAlignment="Top"/>
+        <Label Content="Имя" Margin="26,52,264,0" VerticalAlignment="Top"/>
+        <Label Content="Отчество" Margin="26,80,264,0" VerticalAlignment="Top"/>
+        <Label Content="Приказ о выселении" Margin="26,137,264,0" VerticalAlignment="Top"/>
+        <Label Content="Дата приказа" Margin="26,168,264,0" VerticalAlignment="Top"/>
+        <Label Content="Номер студенческого" HorizontalAlignment="Left" Margin="26,106,0,0" VerticalAlignment="Top" Width="145"/>
+        <Label Content="" x:Name="surname" HorizontalAlignment="Left" Margin="194,23,0,0" VerticalAlignment="Top" Width="187"/>
+        <Label Content="" x:Name="name" HorizontalAlignment="Left" Margin="194,52,0,0" VerticalAlignment="Top" Width="187"/>
+        <Label Content="" x:Name="patronymic" HorizontalAlignment="Left" Margin="194,80,0,0" VerticalAlignment="Top" Width="187"/>
+        <Label Content="" x:Name="ID" HorizontalAlignment="Left" Margin="194,106,0,0" VerticalAlignment="Top" Width="187"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="194,137,0,0" TextWrapping="Wrap" Text="" x:Name="decree" VerticalAlignment="Top" Width="187"/>
+        <DatePicker HorizontalAlignment="Left" Margin="194,177,0,0" x:Name="decreeDate" VerticalAlignment="Top" Width="117"/>
+        <Button Content="Изменить" x:Name="changeButton" Click="changeButton_Click" HorizontalAlignment="Left" Margin="105,218,0,0" VerticalAlignment="Top" Width="96" Height="32"/>
+        <Button Content="Закрыть" x:Name="closeButton" Click="closeButton_Click" HorizontalAlignment="Left" Margin="215,218,0,0" VerticalAlignment="Top" Width="96" Height="32"/>
+        <Button Content="Удалить" x:Name="deleteButton" Click="deleteButton_Click" HorizontalAlignment="Left" Margin="329,218,0,0" VerticalAlignment="Top" Width="96" Height="32"/>
+
+    </Grid>
+</Window>

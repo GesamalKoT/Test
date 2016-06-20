@@ -1,0 +1,14 @@
+﻿<Window x:Class="MGTU_STANKIN.add_NewUser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Добавить нового пользователя" Height="221" Width="380">
+    <Grid Margin="0,0,2,0">
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="187,36,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" x:Name ="user_Name"/>
+        <Label Content="Имя пользователя" HorizontalAlignment="Left" Margin="39,33,0,0" VerticalAlignment="Top"/>
+        <Label Content="Пароль" HorizontalAlignment="Left" Margin="39,76,0,0" VerticalAlignment="Top"/>
+        <Button Content="Добавить" HorizontalAlignment="Left" Margin="39,139,0,0" VerticalAlignment="Top" Width="130" x:Name="Add" Height="32" Click="Add_Click"/>
+        <Button Content="Закрыть" HorizontalAlignment="Left" Margin="209,139,0,0" VerticalAlignment="Top" Width="130" x:Name="Close" Height="32" Click="Close_Click"/>
+        <PasswordBox HorizontalAlignment="Left" Margin="187,79,0,0" VerticalAlignment="Top" Width="120" Height="23" x:Name="user_Password"/>
+
+    </Grid>
+</Window>

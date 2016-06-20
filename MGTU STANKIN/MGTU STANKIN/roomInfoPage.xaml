@@ -1,0 +1,79 @@
+﻿<Page x:Class="MGTU_STANKIN.roomInfoPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Height="450" Width="710"
+	Title="roomInfoPage" Loaded="Page_Loaded">
+
+    <Grid>
+        <Label Content="Корпус общежития" HorizontalAlignment="Left" Margin="51,18,0,0" VerticalAlignment="Top" Width="126"/>
+        <Label Content="Комнат" HorizontalAlignment="Left" Margin="51,49,0,0" VerticalAlignment="Top" Width="126"/>
+        <Label Content="Мест" HorizontalAlignment="Left" Margin="51,80,0,0" VerticalAlignment="Top" Width="126"/>
+        <Label Content="Пустых комнат" HorizontalAlignment="Left" Margin="51,111,0,0" VerticalAlignment="Top" Width="126"/>
+        <Label Content="Свободных мест" HorizontalAlignment="Left" Margin="51,142,0,0" VerticalAlignment="Top" Width="126"/>
+        <Label Content="Семейных комнат" HorizontalAlignment="Left" Margin="51,173,0,0" VerticalAlignment="Top" Width="126"/>
+        <Label Content="Мужских комнат" HorizontalAlignment="Left" Margin="51,208,0,0" VerticalAlignment="Top" Width="126"/>
+        <Label Content="Женских комнат" HorizontalAlignment="Left" Margin="51,253,0,0" VerticalAlignment="Top" Width="117"/>
+        <Label HorizontalAlignment="Left" Margin="299,196,0,0" VerticalAlignment="Top" Width="126">
+            <Label.Content>
+                <TextBlock TextWrapping="Wrap">Свободных мест в мужских комнатах</TextBlock>
+            </Label.Content>
+        </Label>
+        <Label HorizontalAlignment="Left" Margin="299,243,0,0" VerticalAlignment="Top" Height="42" Width="126">
+            <Label.Content>
+                <TextBlock TextWrapping="Wrap">Свободных мест в женсвих комнатах</TextBlock>
+            </Label.Content>
+        </Label>
+        <Label Content="2-х местных комнат" HorizontalAlignment="Left" Margin="51,295,0,0" VerticalAlignment="Top" Width="126"/>
+        <Label Content="3-х местных комнат" HorizontalAlignment="Left" Margin="51,326,0,0" VerticalAlignment="Top" Width="126"/>
+        <Label Content="4-х местных комнат" HorizontalAlignment="Left" Margin="51,357,0,0" VerticalAlignment="Top" Width="126"/>
+        <Label Content="Пустых 2-х местных" HorizontalAlignment="Left" Margin="299,295,0,0" VerticalAlignment="Top" Width="126"/>
+        <Label Content="Пустых 3-х местных" HorizontalAlignment="Left" Margin="299,326,0,0" VerticalAlignment="Top" Width="126"/>
+        <Label Content="Пустых 4-х местных" HorizontalAlignment="Left" Margin="299,357,0,0" VerticalAlignment="Top" Width="126"/>
+        <Label Content="" x:Name="housingLabel" HorizontalAlignment="Left" Margin="206,18,0,0" VerticalAlignment="Top" Width="50"/>
+        <Label Content="" x:Name="roomCount" HorizontalAlignment="Left" Margin="206,49,0,0" VerticalAlignment="Top" Width="50"/>
+        <Label Content="" x:Name="placesCount" HorizontalAlignment="Left" Margin="206,80,0,0" VerticalAlignment="Top" Width="50"/>
+        <Label Content="" x:Name="emptyRooms" HorizontalAlignment="Left" Margin="206,111,0,0" VerticalAlignment="Top" Width="50"/>
+        <Label Content="" x:Name="freePlaces" HorizontalAlignment="Left" Margin="206,142,0,0" VerticalAlignment="Top" Width="50"/>
+        <Label Content="" x:Name="familyRoomsLabel" HorizontalAlignment="Left" Margin="206,173,0,0" VerticalAlignment="Top" Width="50"/>
+        <Label Content="" x:Name="maleRooms" HorizontalAlignment="Left" Margin="206,208,0,0" VerticalAlignment="Top" Width="50"/>
+        <Label Content="" x:Name="femaleRooms" HorizontalAlignment="Left" Margin="206,253,0,0" VerticalAlignment="Top" Width="50"/>
+        <Label Content="" x:Name="places_2rooms" HorizontalAlignment="Left" Margin="206,295,0,0" VerticalAlignment="Top" Width="50"/>
+        <Label Content="" x:Name="places_3rooms" HorizontalAlignment="Left" Margin="206,326,0,0" VerticalAlignment="Top" Width="50"/>
+        <Label Content="" x:Name="places_4rooms" HorizontalAlignment="Left" Margin="206,357,0,0" VerticalAlignment="Top" Width="50"/>
+        <Label Content="" x:Name="male_fPlaces" HorizontalAlignment="Left" Margin="439,208,0,0" VerticalAlignment="Top" Width="50"/>
+        <Label Content="" x:Name="female_fPlaces" HorizontalAlignment="Left" Margin="439,253,0,0" VerticalAlignment="Top" Width="50"/>
+        <Label Content="" x:Name="empty_places_2rooms" HorizontalAlignment="Left" Margin="439,295,0,0" VerticalAlignment="Top" Width="50"/>
+        <Label Content="" x:Name="empty_places_3rooms" HorizontalAlignment="Left" Margin="439,326,0,0" VerticalAlignment="Top" Width="50"/>
+        <Label Content="" x:Name="empty_places_4rooms" HorizontalAlignment="Left" Margin="439,357,0,0" VerticalAlignment="Top" Width="50"/>
+        <Button Content="Назад" HorizontalAlignment="Left" Margin="554,360,0,0" VerticalAlignment="Top" Width="104" Height="37"  Command="NavigationCommands.BrowseBack"/>
+        <!-- <Grid.RowDefinitions>
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="71*"/>
+        </Grid.RowDefinitions>
+    -->
+    </Grid>
+</Page>

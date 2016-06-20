@@ -1,0 +1,48 @@
+/*private void dbCheck()
+        {
+            string tooday = DateTime.Now.Date.ToString("yyyy-MM-dd H:mm:ss");
+            Action _searchNonPayedAction = () =>
+            {
+                MySqlCommand searchNonPayedST = new MySqlCommand("SELECT * FROM Students WHERE Date < '"+tooday+"';", globalConnection);
+                searchNonPayedST.ExecuteNonQuery();
+
+                MySqlDataAdapter da = new MySqlDataAdapter(searchNonPayedST);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                var myData = dt.Select();
+
+                if (myData.Length != 0) { messages[messageCounter] = "≈сть проживающие, не оплатившие проживание"; messageCounter += 1; }
+                else
+                {
+                    searchNonPayedST.CommandText = "SELECT * FROM OtherLiving WHERE Date < '" + tooday + "';";
+                    searchNonPayedST.ExecuteNonQuery();
+
+                    MySqlDataAdapter da1 = new MySqlDataAdapter(searchNonPayedST);
+                    DataTable dt1 = new DataTable();
+                    da1.Fill(dt1);
+                    var myData1 = dt1.Select();
+
+                    if (myData1.Length != 0) { messages[messageCounter] = "≈сть проживающие, не оплатившие проживание"; messageCounter += 1; }
+                }
+            };
+        }*/
+
+        /* private void check()
+        {
+            theradStart _newThreadClass = new theradStart(globalConnection);
+            _newThreadClass._nonPayed += threadMessage;
+
+            Thread _newThread = new Thread(_newThreadClass.dbCheck);
+            _newThread.Start();
+        }*/
+
+        /*private void threadMessage(string message)
+        {
+            Action action = () =>
+            {
+                messages[messageCounter] = message;
+                messageCounter += 1;
+            };
+            this.Dispatcher.Invoke(action);
+            testLabel.Content = messages[messageCounter];
+        }*/

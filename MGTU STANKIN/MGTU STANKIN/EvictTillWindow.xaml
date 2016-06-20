@@ -1,0 +1,13 @@
+﻿<Window x:Class="MGTU_STANKIN.EvictTillWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Временно выселить проживающего" Height="164.697" Width="356.716"
+        Loaded="Window_Loaded">
+    <Grid>
+        <Label Content="Выселить до: " HorizontalAlignment="Left" Margin="35,27,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="evictDate" SelectedDateFormat="Long" SelectedDateChanged="evictDate_SelectedDateChanged" HorizontalAlignment="Left" Margin="162,29,0,0" VerticalAlignment="Top" Width="138"/>
+        <Button Content="Выселить" x:Name="evict" Click="evict_Click" HorizontalAlignment="Left" Margin="47,73,0,0" VerticalAlignment="Top" Width="112" Height="25"/>
+        <Button Content="Закрыть" x:Name="closeButton" Click="closeButton_Click" Margin="188,73,49,0" VerticalAlignment="Top" Height="25"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,9 @@
+﻿<Window x:Class="MGTU_STANKIN.MainForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         Height="450" Width="710" Loaded="Window_Loaded" >
+    <Window.Title>
+        Общежития МГТУ "Станкин"
+    </Window.Title>
+    <Frame x:Name="Frame" Source="Functions.xaml" ContentRendered="Frame_ContentRendered"/>
+</Window>

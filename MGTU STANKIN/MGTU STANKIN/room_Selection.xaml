@@ -1,0 +1,35 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="MGTU_STANKIN.room_Selection"
+        Title="Подбор комнаты" Height="351" Width="767.2" Loaded="Window_Loaded" WindowStyle="None">
+    <Grid Margin="0,0,2,-3">
+        <GroupBox Header="Параметры поиска" Margin="12,28,0,0" VerticalAlignment="Top" Height="224" HorizontalAlignment="Left" Width="216"/>
+        <CheckBox  Content="Только свободные комнаты" Margin="38,63,0,0" x:Name="only_FreeRooms" Height="15" VerticalAlignment="Top" Click="only_FreeRooms_Click" HorizontalAlignment="Left" Width="190"/>
+        <CheckBox x:Name="only_FamilyRooms" Margin="38,94,0,0" Content="Семейные комнаты" Height="16" VerticalAlignment="Top"  Click="only_FamilyRooms_Click" HorizontalAlignment="Left" Width="180"/>
+        <Label Content="Количество мест:" Margin="29,160,0,0" Height="26" VerticalAlignment="Top" HorizontalAlignment="Left" Width="112"/>
+        <Button Content="Поиск" Margin="38,207,0,0" x:Name="search" Click="search_Click" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left" Width="73"/>
+        <Button Content="Очистить" Margin="145,207,0,0" Height="20" VerticalAlignment="Top" x:Name="srcClear" Click="srcClear_Click" HorizontalAlignment="Left" Width="73"/>
+        <DataGrid Margin="273,28,0,0" x:Name="room_Info" IsReadOnly="True" AutoGenerateColumns="False" MouseDoubleClick="room_Info_MouseDoubleClick" HorizontalAlignment="Left" Width="437" Height="224" VerticalAlignment="Top">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="" Width="20" Binding="{Binding inc}"/>
+                <DataGridTextColumn Header="Номер комнаты" Width="100" Binding="{Binding room_Numb}"/>
+                <DataGridTextColumn Header="Количество мест" Width="110" Binding="{Binding places_Con}"/>
+                <DataGridTextColumn Header="Свободных мест" Width="100" Binding="{Binding Fplaces_Con}"/>
+                <DataGridTextColumn Header="Тип комнаты" Width="50*" Binding="{Binding sex}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <ComboBox x:Name="places_Count" Margin="174,164,0,0" RenderTransformOrigin="-0.833,6.636" Height="22" VerticalAlignment="Top" HorizontalAlignment="Left" Width="44">
+            <System:Int32>1</System:Int32>
+            <System:Int32>2</System:Int32>
+            <System:Int32>3</System:Int32>
+            <System:Int32>4</System:Int32>
+        </ComboBox>
+        <Label Content="Поиск по номеру" HorizontalAlignment="Left" Margin="29,124,0,0" VerticalAlignment="Top" Width="109"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="174,127,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="44" x:Name="roomNumber"/>
+        <CheckBox HorizontalAlignment="Left" Margin="29,267,0,0" VerticalAlignment="Top" x:Name="SetFamily" Click="SetFamily_Click">
+            Задать комнате тип "Семейная"
+        </CheckBox>
+        <Button Content="Выбрать" HorizontalAlignment="Left" Margin="528,267,0,0" VerticalAlignment="Top" Width="182" Height="36" x:Name="Accept" Click="Accept_Click"/>
+    </Grid>
+</Window>

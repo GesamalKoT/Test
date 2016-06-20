@@ -1,0 +1,84 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="MGTU_STANKIN.livingInfoPage" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Height="450" Width="710" Loaded="Page_Loaded"
+	Title="livingInfoPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="21*"/>
+            <RowDefinition Height="31*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="24*"/>
+            <RowDefinition Height="11*"/>
+            <RowDefinition Height="32*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="34*"/>
+            <RowDefinition Height="13*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="12*"/>
+            <RowDefinition Height="32*"/>
+            <RowDefinition Height="11*"/>
+            <RowDefinition Height="90*"/>
+            <RowDefinition Height="25*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="18*"/>
+            <ColumnDefinition Width="169*"/>
+            <ColumnDefinition Width="66*"/>
+            <ColumnDefinition Width="167*"/>
+            <ColumnDefinition Width="102*"/>
+            <ColumnDefinition Width="188*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Количество проживающих" Grid.Column="1" Grid.Row="1" Margin="0,2,10,3"/>
+        <Label Grid.Column="1" Grid.Row="5" Grid.RowSpan="4" Margin="0,3,10,9">
+            <TextBlock TextWrapping="Wrap"><Run Text="Количество проживающих, не являющихся студентами &quot;МГТУ &quot;Станкин&quot;"/></TextBlock>
+        </Label>
+        <Label Content="Общее число студентов" Grid.Column="1" Margin="0,0,10,0" Grid.Row="3"/>
+        <Label Content="" x:Name="commonCount" Grid.Column="2" Margin="10,2,13,3" Grid.Row="1"/>
+        <Label Content="" x:Name="nonSTcount" Grid.Column="2" Margin="10,0,13,9" Grid.Row="6" Grid.RowSpan="2"/>
+        <Label Content="" x:Name="stCount" Grid.Column="2" Margin="10,4,13,0" Grid.Row="3"/>
+        <Button Content="Назад" Command="NavigationCommands.BrowseBack" Grid.Column="5" Margin="0,22,57,23" Grid.Row="16"/>
+        <Rectangle Grid.Column="3" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="330" Margin="10,12,0,0" Grid.RowSpan="17" Stroke="Black" VerticalAlignment="Top" Width="415" RadiusY="6.5" RadiusX="6.5" Grid.ColumnSpan="3"/>
+        <Label Content="Факультет" Grid.Column="3" Margin="20,2,20,3" Grid.Row="1"/>
+        <ComboBox Grid.Column="4" Margin="3,0,10,5" Grid.Row="1" SelectionChanged="ComboBox_SelectionChanged" x:Name="faculty">
+            <System:String>ИТС</System:String>
+            <System:String>МТО</System:String>
+            <System:String>ФЭМ</System:String>
+            <System:String>Аспирантура</System:String>
+            <System:String>ЦОИГ</System:String>
+        </ComboBox>
+        <Label Content="Курс" Grid.Column="5" HorizontalAlignment="Left" Margin="10,2,0,0" Grid.Row="1" VerticalAlignment="Top" Height="26" Width="35"/>
+        <TextBox x:Name="course" TextChanged ="course_TextChanged"  Grid.Column="5" HorizontalAlignment="Left" Height="25" Margin="67,3,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="64"/>
+        <Label Content="Форма" Grid.Column="3" HorizontalAlignment="Left" Margin="20,4,0,0" Grid.Row="3" VerticalAlignment="Top" Height="26" Width="47"/>
+        <ComboBox x:Name="form" Grid.Column="4" Margin="3,4,10,0" Grid.Row="3" SelectionChanged="form_SelectionChanged">
+            <System:String>Бюджетная</System:String>
+            <System:String>Платная</System:String>
+        </ComboBox>
+        <Label Content="Число студентов" Grid.Column="3" Margin="20,10,10,14" Grid.Row="5" Grid.RowSpan="2"/>
+        <Label Content="" x:Name="stCount1" Grid.Column="4" HorizontalAlignment="Left" Margin="29,12,0,0" Grid.Row="5" VerticalAlignment="Top" Width="44" Grid.RowSpan="2"/>
+        <Label Content="Не оплатили проживание" Grid.Column="3" HorizontalAlignment="Left" Margin="19,2,0,4" Grid.Row="8" Width="157" Grid.ColumnSpan="2"/>
+        <Label Content="" x:Name="nonPayedST" Grid.Column="4" HorizontalAlignment="Left" Margin="29,5,0,0" Grid.Row="8" VerticalAlignment="Top" Width="44"/>
+        <Label Content="Количество мужчин" Grid.Column="3" Margin="20,0,26,6" Grid.Row="10"/>
+        <Label Content="" x:Name="menCountST" Grid.Column="4" HorizontalAlignment="Left" Margin="29,3,0,0" Grid.Row="10" VerticalAlignment="Top" Width="44"/>
+        <Label Content="Количество женщин" Grid.Column="3" Margin="20,0,10,4" Grid.Row="12"/>
+        <Label Content="" x:Name="womenCountST" Grid.Column="4" HorizontalAlignment="Left" Margin="29,0,0,0" Grid.Row="12" VerticalAlignment="Top" Width="44"/>
+        <Label Content="Число иностранцев" Grid.Column="3" Margin="20,3,26,0" Grid.Row="14" VerticalAlignment="Top"/>
+        <Label Content="" x:Name="forenSTCount" Grid.Column="4" HorizontalAlignment="Left" Margin="29,2,0,0" Grid.Row="14" VerticalAlignment="Top" Width="44"/>
+        <Button Content="Очистить" x:Name="clear" Click="clear_Click" Grid.Column="5" HorizontalAlignment="Left" Margin="10,9,0,0" Grid.Row="13" VerticalAlignment="Top" Width="105" Height="35" Grid.RowSpan="2"/>
+        <Label Grid.Column="1" HorizontalAlignment="Left" Margin="0,5,0,0" Grid.Row="10" VerticalAlignment="Top">
+            <Label.Content>
+                <TextBlock TextWrapping="Wrap">По состоянию на:</TextBlock>
+            </Label.Content>
+        </Label>
+        <DatePicker Grid.Column="1" Margin="113,5,0,0" Grid.Row="10" SelectedDateChanged="date_SelectedDateChanged" SelectedDateFormat="Long" x:Name="date" VerticalAlignment="Top" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="109"/>
+    </Grid>
+</Page>

@@ -1,0 +1,181 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="MGTU_STANKIN.studentSerch" 
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Width="697" Height="420"
+	Title="studentSerch" Loaded="Page_Loaded">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="27*"/>
+            <ColumnDefinition Width="108*"/>
+            <ColumnDefinition Width="426*"/>
+            <ColumnDefinition Width="108*"/>
+            <ColumnDefinition Width="28*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="19*"/>
+            <RowDefinition Height="32*"/>
+            <RowDefinition Height="11*"/>
+            <RowDefinition Height="32*"/>
+            <RowDefinition Height="43*"/>
+            <RowDefinition Height="16*"/>
+            <RowDefinition Height="203*"/>
+            <RowDefinition Height="64*"/>
+        </Grid.RowDefinitions>
+        <Button Content="Назад" Margin="390,10,8,20" Command="NavigationCommands.BrowseBack" Grid.Row="7" Grid.Column="2" Grid.ColumnSpan="2"/>
+        <ComboBox x:Name="Search" Margin="1,4,305,0" VerticalAlignment="Top" Height="26" Grid.Column="2" Grid.Row="1" SelectionChanged="ComboBox_SelectionChanged">
+            <System:String>Проживающих</System:String>
+            <System:String>Комнат</System:String>
+            <System:String>По архиву</System:String>
+        </ComboBox>
+        <ComboBox x:Name="livingParam" Margin="296,8,10,2" Grid.Column="2" Grid.Row="1" SelectionChanged="livingParam_SelectionChanged" Visibility="Hidden">
+            <System:String>По ФИО</System:String>
+            <System:String>По курсу</System:String>
+            <System:String>По номеру студенческого билета</System:String>
+            <System:String>По номеру комнаты</System:String>
+            <System:String>По гражданству</System:String>
+            <System:String>По номеру приказа</System:String>
+            <System:String>По сроку проживания</System:String>
+        </ComboBox>
+        <TextBox x:Name="serchString" TextWrapping="Wrap" Text="" Grid.Row="3" Grid.Column="1" Margin="94,3,10,6" Grid.ColumnSpan="2" Visibility="Hidden"/>
+        <CheckBox x:Name="CheckBox2" Content="" Margin="22,27,388,1" Grid.Row="4" Grid.Column="2" Click="CheckBox2_Click"/>
+        <CheckBox x:Name="CheckBox1" Content="" Margin="3,27,88,1" Grid.Row="4" Grid.Column="1" Click="CheckBox1_Click"/>
+        <DataGrid x:Name="livingTable" AutoGenerateColumns="False" IsReadOnly="True" Margin="8,10,8,4" Grid.Row="6" Grid.ColumnSpan="3" Grid.Column="1" MouseDoubleClick="livingTable_MouseDoubleClick" Visibility="Hidden">
+            <DataGrid.Columns>
+                <DataGridTextColumn Width=""/>
+                <DataGridTextColumn Header="Фамилия" Width="110*" Binding="{Binding surname}" />
+                <DataGridTextColumn Header="Имя" Width="100*" Binding="{Binding name}"/>
+                <DataGridTextColumn Header="Отчество" Width="100*" Binding="{Binding patonimic}"/>
+                <DataGridTextColumn Width="85*" Binding="{Binding id}">
+                    <DataGridTextColumn.Header >
+                        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap">Номер студенчесого</TextBlock>
+                    </DataGridTextColumn.Header>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Номер комнаты" Width="90*" Binding="{Binding roomNumber}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid Grid.Column="1" x:Name="roomTable" IsReadOnly="True" Visibility="Hidden" HorizontalAlignment="Left" Margin="75,10,0,0" Grid.Row="6" VerticalAlignment="Top" Width="505" Height="189" AutoGenerateColumns="False" Grid.ColumnSpan="3">
+            <DataGrid.Columns>
+                <DataGridTextColumn Width=""/>
+                <DataGridTextColumn Width="50*" Header="Номер комнаты" Binding="{Binding room_Numb}"/>
+                <DataGridTextColumn Width="50*" Header="Количество мест" Binding="{Binding places_Con}"/>
+                <DataGridTextColumn Width="50*" Binding="{Binding Fplaces_Con}">
+                    <DataGridTextColumn.Header>
+                        <TextBlock TextWrapping="Wrap">Количество свободных мест</TextBlock>
+                    </DataGridTextColumn.Header>
+                </DataGridTextColumn>
+                <DataGridTextColumn Width="50*" Header="Тип комнаты" Binding="{Binding sex}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="Поиск: " Margin="48,4,10,0" VerticalAlignment="Top" Grid.Column="1" Height="26" Grid.Row="1"/>
+        <Label Content="Параметры поиска:" Margin="161,4,145,0" VerticalAlignment="Top" Grid.Column="2" Height="26" Grid.Row="1"/>
+
+        <ComboBox Grid.Column="2" Margin="296,4,10,0" Grid.Row="3" VerticalAlignment="Top" x:Name="Citizenship" ItemsSource="{Binding}" Height="22" Visibility="Hidden"/>
+        <ComboBox Grid.Column="2"  x:Name="roomParam" Margin="296,8,10,2" Grid.Row="1" Visibility="Hidden" SelectionChanged="roomParam_SelectionChanged">
+            <System:String>По номеру</System:String>
+            <System:String>По количеству мест</System:String>
+            <System:String>По количеству свободных мест</System:String>
+            <System:String>По типу комнаты</System:String>
+        </ComboBox>
+        <Button Content="Поиск" x:Name="searchButton" Click="searchButton_Click" Grid.Column="2" Margin="228,10,64,20" Grid.Row="7"/>
+        <Label x:Name="livingLabel2" Grid.Column="2" Margin="52,4,262,0" Grid.Row="4" Grid.RowSpan="2" Visibility="Hidden">
+            <Label.Content>
+                <TextBlock TextWrapping="Wrap">Не являются студентами "МГТУ "Станкин"</TextBlock>
+            </Label.Content>
+        </Label>
+        <Label x:Name="LivingLabel1" Grid.Column="1" Margin="25,13,0,5" Grid.Row="4" Grid.RowSpan="2" Visibility="Hidden">
+            <TextBlock TextWrapping="Wrap" Width="102"><Run Text="Не оплатили проживание"/></TextBlock>
+        </Label>
+        <Label x:Name="livingLabel3" Content="Факультет:" Grid.Column="2" Margin="181,20,177,14" Grid.Row="4" Grid.RowSpan="2" Visibility="Hidden"/>
+        <ComboBox Grid.Column="2" Margin="256,22,64,14" Grid.Row="4" Grid.RowSpan="2" x:Name="studentFac" Visibility="Hidden">
+            <System:String>ИТС</System:String>
+            <System:String>МТО</System:String>
+            <System:String>ФЭМ</System:String>
+            <System:String>Аспирантура</System:String>
+            <System:String>ЦОИГ</System:String>
+        </ComboBox>
+        <Label x:Name="livingLabel4" Content="Форма: " Grid.Column="2" Margin="373,19,0,10" Grid.Row="4" Grid.RowSpan="2" Visibility="Hidden"/>
+        <ComboBox x:Name="Form" Grid.Column="3" Margin="0,20,14,0" Grid.Row="4" Visibility="Hidden">
+            <System:String>Бюджетная</System:String>
+            <System:String>Платная</System:String>
+        </ComboBox>
+        <Button Grid.Column="3" Grid.Row="3" Margin="0,3,8,6" x:Name="clearFilters" Click="clearFilters_Click">
+            <Button.Content>
+                <TextBlock TextWrapping="Wrap">Сбросить</TextBlock>
+            </Button.Content>
+        </Button>
+        <Label Grid.Column="1" HorizontalAlignment="Left" Margin="22,13,0,0" Grid.Row="4" VerticalAlignment="Top" Grid.RowSpan="2" Width="86" Height="46" x:Name="roomLable1" Visibility="Hidden">
+            <Label.Content>
+                <TextBlock TextWrapping="Wrap" Width="73">Пустые комнаты</TextBlock>
+            </Label.Content>
+        </Label>
+        <Label Grid.Column="2" HorizontalAlignment="Left" Margin="42,13,0,0" Grid.Row="4" VerticalAlignment="Top" Height="45" Grid.RowSpan="2" Width="98" x:Name="roomLabel2">
+            <Label.Content>
+                <TextBlock TextWrapping="Wrap">Есть свободные места</TextBlock>
+            </Label.Content>
+        </Label>
+        <ComboBox x:Name="type" Grid.Column="2" HorizontalAlignment="Left" Margin="296,4,0,0" Grid.Row="3" VerticalAlignment="Top" Width="120" Visibility="Hidden">
+            <System:String>Мужская</System:String>
+            <System:String>Женская</System:String>
+            <System:String>Семейная</System:String>
+        </ComboBox>
+        <CheckBox x:Name="checkBox3" Grid.Column="2" HorizontalAlignment="Left" Margin="160,27,0,0" Grid.Row="4" VerticalAlignment="Top" Click="checkBox3_Click"/>
+        <Label x:Name="roomLabel3" Content="Полные комнаты" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="179,20,0,0" Grid.Row="4" VerticalAlignment="Top"/>
+        <ComboBox Grid.ColumnSpan="2" Grid.Column="2" HorizontalAlignment="Left" Margin="409,24,0,0" Grid.Row="4" VerticalAlignment="Top" Width="58" Grid.RowSpan="2" x:Name="roomPlaces">
+            <System:String>1</System:String>
+            <System:String>2</System:String>
+            <System:String>3</System:String>
+            <System:String>4</System:String>
+        </ComboBox>
+        <Label Content="Количество мест" Grid.Column="2" HorizontalAlignment="Left" Margin="296,21,0,0" Grid.Row="4" VerticalAlignment="Top" Grid.RowSpan="2" x:Name="roomLabel4"/>
+        <DataGrid x:Name="arcTable" IsReadOnly="True" AutoGenerateColumns="False" Grid.Column="1" HorizontalAlignment="Left" Margin="75,10,0,0" Grid.Row="6" VerticalAlignment="Top" Width="527" Height="193" Grid.ColumnSpan="3" MouseDoubleClick="arcTable_MouseDoubleClick">
+            <DataGrid.Columns>
+                <DataGridTextColumn Width=""/>
+                <DataGridTextColumn Header="Фамилия" Width="110*" Binding="{Binding surname}" />
+                <DataGridTextColumn Header="Имя" Width="100*" Binding="{Binding name}"/>
+                <DataGridTextColumn Header="Отчество" Width="100*" Binding="{Binding patronymic}"/>
+                <DataGridTextColumn Width="85*" Binding="{Binding id}">
+                    <DataGridTextColumn.Header >
+                        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap">Номер студенчесого</TextBlock>
+                    </DataGridTextColumn.Header>
+                </DataGridTextColumn>
+                <DataGridTextColumn Width="90*" Binding="{Binding date}">
+                    <DataGridTextColumn.Header>
+                        <TextBlock TextWrapping="Wrap">Дата выселения</TextBlock>
+                    </DataGridTextColumn.Header>
+                </DataGridTextColumn>
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label x:Name="stayLimitLabel1" Visibility="Hidden" Content="Срок проживания истекает через: " Grid.Column="1" HorizontalAlignment="Left" Margin="48,2,0,0" Grid.Row="3" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="200"/>
+        <ComboBox x:Name="stayLimitComboBox" Visibility="Hidden" Grid.Column="2" HorizontalAlignment="Left" Margin="144,6,0,0" Grid.Row="3" VerticalAlignment="Top" Width="47" SelectionChanged="stayLimitComboBox_SelectionChanged">
+            <System:String>&lt; 1</System:String>
+            <System:String>1 - 3</System:String>
+            <System:String>3 - 6</System:String>
+            <System:String>&gt; 6</System:String>
+        </ComboBox>
+        <Label Content="месяца(ев)" x:Name="stayLimitLabel2" Visibility="Hidden" Grid.Column="2" HorizontalAlignment="Left" Margin="201,3,0,0" Grid.Row="3" VerticalAlignment="Top"/>
+        <Label x:Name="stayLimitLabel3" Grid.Column="1" Margin="25,7,0,0" Grid.Row="4" VerticalAlignment="Top" Height="56" Grid.RowSpan="3">
+            <Label.Content>
+                <TextBlock TextWrapping="Wrap">Срок проживания истек</TextBlock>
+            </Label.Content>
+        </Label>
+        <ComboBox Grid.Column="2" Margin="296,8,10,2" Grid.Row="1" x:Name="arcParam" SelectionChanged="arcParam_SelectionChanged">
+            <System:String>По ФИО</System:String>
+            <System:String>По номеру</System:String>
+            <System:String>По дате выселения</System:String>
+            <System:String>По номеру приказа</System:String>
+        </ComboBox>
+        <Label Content="Проживающие, выселенные в период с: " x:Name="arcLabel1"  Grid.Column="1" Margin="10,4,282,0" Grid.Row="3" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <DatePicker Grid.Column="2" Margin="140,5,186,0" Grid.Row="3" x:Name="arcDate1" VerticalAlignment="Top"/>
+        <DatePicker Grid.Column="2" Margin="299,4,27,0" Grid.Row="3" x:Name="arcDate2" VerticalAlignment="Top" SelectedDateChanged="arcDate2_SelectedDateChanged"/>
+        <Label Content="по: " Grid.Column="2" HorizontalAlignment="Left" x:Name="arcLabel2" Margin="256,2,0,0" Grid.Row="3" VerticalAlignment="Top"/>
+        <CheckBox Content="Временно выселенные" x:Name="evictedP" Click="evictedP_Click" Grid.Column="1" HorizontalAlignment="Left" Margin="8,20,0,0" Grid.Row="7" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="150"/>
+
+    </Grid>
+</Page>
